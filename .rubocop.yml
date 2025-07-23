@@ -1,0 +1,85 @@
+require:
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: enable
+  Exclude:
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+
+# Layout rules
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*'
+
+Layout/TrailingWhitespace:
+  Enabled: true
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: true
+
+# Style rules
+Style/BlockComments:
+  Enabled: true
+  Exclude:
+    - 'lib/stateset/models/**/*'
+    - 'lib/stateset/api/**/*'
+    - 'spec/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  Exclude:
+    - 'spec/**/*'
+
+# Metrics rules - relaxed for generated code
+Metrics/BlockLength:
+  Max: 50
+  Exclude:
+    - 'spec/**/*'
+    - 'lib/stateset/models/**/*'
+    - 'lib/stateset/api/**/*'
+
+Metrics/ClassLength:
+  Max: 500
+  Exclude:
+    - 'lib/stateset/models/**/*'
+    - 'lib/stateset/api/**/*'
+
+Metrics/MethodLength:
+  Max: 50
+  Exclude:
+    - 'lib/stateset/models/**/*'
+    - 'lib/stateset/api/**/*'
+
+Metrics/ModuleLength:
+  Max: 500
+
+Metrics/ParameterLists:
+  Max: 8
+  Exclude:
+    - 'lib/stateset/models/**/*'
+    - 'lib/stateset/api/**/*'
+
+# Naming rules
+Naming/VariableNumber:
+  Enabled: false
+
+# RSpec specific rules
+RSpec/ExampleLength:
+  Max: 20
+
+RSpec/MultipleExpectations:
+  Max: 5
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/DescribeClass:
+  Enabled: false

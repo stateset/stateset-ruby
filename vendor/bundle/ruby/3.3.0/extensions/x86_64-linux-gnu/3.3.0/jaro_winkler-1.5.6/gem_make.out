@@ -1,0 +1,21 @@
+current directory: /workspace/vendor/bundle/ruby/3.3.0/gems/jaro_winkler-1.5.6/ext/jaro_winkler
+/usr/bin/ruby3.3 -I/usr/lib/ruby/vendor_ruby extconf.rb
+creating Makefile
+
+current directory: /workspace/vendor/bundle/ruby/3.3.0/gems/jaro_winkler-1.5.6/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20250723-2245-f7y2jc sitelibdir\=./.gem.20250723-2245-f7y2jc clean
+
+current directory: /workspace/vendor/bundle/ruby/3.3.0/gems/jaro_winkler-1.5.6/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20250723-2245-f7y2jc sitelibdir\=./.gem.20250723-2245-f7y2jc
+compiling adj_matrix.c
+compiling codepoints.c
+compiling jaro.c
+compiling jaro_winkler.c
+linking shared-object jaro_winkler/jaro_winkler_ext.so
+
+current directory: /workspace/vendor/bundle/ruby/3.3.0/gems/jaro_winkler-1.5.6/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20250723-2245-f7y2jc sitelibdir\=./.gem.20250723-2245-f7y2jc install
+/usr/bin/install -c -m 0755 jaro_winkler_ext.so ./.gem.20250723-2245-f7y2jc/jaro_winkler
+
+current directory: /workspace/vendor/bundle/ruby/3.3.0/gems/jaro_winkler-1.5.6/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20250723-2245-f7y2jc sitelibdir\=./.gem.20250723-2245-f7y2jc clean
